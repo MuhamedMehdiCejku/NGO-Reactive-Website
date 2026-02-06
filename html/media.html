@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <title>Media & Monitorimi - RYSA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --rysa-red: #d90429;
+            --rysa-navy: #2b2d42;
+        }
+        /* Style per Video Cards */
+        .video-card {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+        .video-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        .video-placeholder {
+            position: relative;
+            background: #000;
+            display: block;
+            overflow: hidden;
+        }
+        .video-placeholder img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            opacity: 0.8;
+            transition: 0.5s;
+        }
+        .video-placeholder:hover img {
+            opacity: 0.4;
+            transform: scale(1.1);
+        }
+        .play-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 4rem;
+            text-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+        .fed-logo {
+            max-height: 45px;
+            filter: grayscale(20%);
+        }
+        /* Seksioni i Sfidave */
+        .challenge-box {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+            border-left: 4px solid var(--rysa-red);
+        }
+        /* Statistikat e Monitorimit */
+        .stat-badge {
+            background: var(--rysa-navy);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        /* Paragrafi Final */
+        .info-paragraph {
+            background: linear-gradient(135deg, #ffffff 0%, #f1f1f1 100%);
+            border-right: 5px solid var(--rysa-red);
+            border-left: 5px solid var(--rysa-red);
+            padding: 30px;
+            margin: 50px 0;
+            border-radius: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="RYSA Logo" class="logo">
+                </a>
+            </div>
+            <div class="col-sm-8 text-right nav">
+                <a href="index.html">Ballina</a>
+                <a href="sherbimet.html">Shërbimet</a>
+                <a href="aktivitetet.html">Aktivitetet</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="ekipi.html">Ekipi</a>
+                <a href="media.html">Media</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="hero text-center py-5">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Media - Monitorimi strategjik</h1>
+        <p class="lead mx-auto" style="max-width: 800px;">
+            Një dritare digjitale drejt fushëveprimeve tona! Ne monitorojmë progresin e federatave partnere, dhe analizojmë çdo sfidë për të siguruar mjedis cilësor për rininë.
+        </p>
+    </div>
+</section>
+
+<section class="section py-5 bg-light">
+    <div class="container">
+        
+        <div class="row text-center mb-5">
+            <div class="col-md-4">
+                <div class="p-3 shadow-sm bg-white rounded-3 border-bottom border-danger border-3">
+                    <h3 class="fw-bold text-danger">120+</h3>
+                    <p class="text-muted mb-0">Orë Monitorimi</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 shadow-sm bg-white rounded-3 border-bottom border-danger border-3">
+                    <h3 class="fw-bold text-danger">12</h3>
+                    <p class="text-muted mb-0">Raporte Analitike</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 shadow-sm bg-white rounded-3 border-bottom border-danger border-3">
+                    <h3 class="fw-bold text-danger">100%</h3>
+                    <p class="text-muted mb-0">Transparencë</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="video-card shadow-sm">
+                    <div class="p-3 d-flex align-items-center justify-content-between bg-white border-bottom">
+                        <div class="d-flex align-items-center">
+                            <img src="images/federations/ffk.png" alt="FFK Logo" class="fed-logo me-3">
+                            <div>
+                                <h5 class="mb-0 fw-bold">Futbolli (FFK)</h5>
+                                <small class="text-muted">Monitorimi i Performancës</small>
+                            </div>
+                        </div>
+                        <i class="bi bi-broadcast text-danger pulse"></i>
+                    </div>
+                    
+                    <a href="https://www.youtube.com/c/FederataeFutbolliteKosov%C3%ABs" target="_blank" class="video-placeholder">
+                        <img src="https://img.youtube.com/vi/k6vD-p9v_4U/maxresdefault.jpg" alt="FFK Thumbnail">
+                        <div class="play-overlay"><i class="bi bi-play-btn-fill"></i></div>
+                    </a>
+
+                    <div class="p-4">
+                        <span class="stat-badge"><i class="bi bi-graph-up pe-1"></i> Analizë e Qarkullimit</span>
+                        <p class="small text-secondary">Vrojtimi i rritjes profesionale të lojtarëve të rinj dhe vlerësimi teknik i infrastrukturës së stadiumeve.</p>
+                        
+                        <div class="challenge-box">
+                            <h6 class="fw-bold mb-2"><i class="bi bi-exclamation-triangle-fill text-warning"></i> Sfidat e Identifikuara:</h6>
+                            <ul class="small mb-0 ps-3">
+                                <li>Mungesa e fushave ndihmëse në zona rurale.</li>
+                                <li>Nevoja për digjitalizimin e protokolleve të ndeshjeve.</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.youtube.com/c/FederataeFutbolliteKosov%C3%ABs" target="_blank" class="btn btn-outline-danger w-100 mt-3">Shiko Aktivitetin e Fundit</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="video-card shadow-sm">
+                    <div class="p-3 d-flex align-items-center justify-content-between bg-white border-bottom">
+                        <div class="d-flex align-items-center">
+                            <img src="images/federations/fbk.png" alt="FBK Logo" class="fed-logo me-3">
+                            <div>
+                                <h5 class="mb-0 fw-bold">Basketbolli (FBK)</h5>
+                                <small class="text-muted">Monitorimi Logjistik</small>
+                            </div>
+                        </div>
+                        <i class="bi bi-broadcast text-danger pulse"></i>
+                    </div>
+
+                    <a href="https://www.youtube.com/@federataebasketbollitekosoves" target="_blank" class="video-placeholder">
+                        <img src="https://img.youtube.com/vi/vOqG1-fO7e8/maxresdefault.jpg" alt="FBK Thumbnail">
+                        <div class="play-overlay"><i class="bi bi-play-btn-fill"></i></div>
+                    </a>
+
+                    <div class="p-4">
+                        <span class="stat-badge"><i class="bi bi-people-fill pe-1"></i> Përfshirja Rinore</span>
+                        <p class="small text-secondary">Monitorimi i ligave të pionierëve dhe juniorëve për të siguruar barazi dhe mundësi zhvillimi.</p>
+                        
+                        <div class="challenge-box">
+                            <h6 class="fw-bold mb-2"><i class="bi bi-lightning-fill text-primary"></i> Analiza e Sfidave:</h6>
+                            <ul class="small mb-0 ps-3">
+                                <li>Optimizimi i orareve të stërvitjeve në palestrat publike.</li>
+                                <li>Zgjidhja e pengesave teknike në transmetimet "live".</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.youtube.com/@federataebasketbollitekosoves" target="_blank" class="btn btn-outline-danger w-100 mt-3">Shiko Aktivitetin e Fundit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-paragraph shadow">
+            <h4 class="fw-bold mb-3">Misioni ynë i monitorimit</h4>
+            <p class="lead mb-0">
+                Për organizatën RYSA, media nuk është vetëm mjet informimi, por një instrument kritik për monitorimin e progresit. 
+                Përmes bashkëpunimit të ngushtë me Federatat, ne analizojmë çdo sfidë teknike dhe logjistike me të cilën ballafaqohen ekipet. 
+                Ky proces na lejon të ndërtojmë ura bashkëpunimi dhe të propozojmë zgjidhje që direkt ndikojnë në cilësinë e jetës sportive për të rinjtë tanë.
+            </p>
+            <div class="mt-4">
+                <a href="kontakti.html" class="btn btn-danger btn-lg px-5 shadow-sm">Raporto një sfidë/problem!</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h4>RYSA</h4>
+                <p>
+                    Reactive Youth & Sports Association është organizatë
+                    jo-qeveritare e fokusuar në zhvillimin e të rinjve
+                    përmes sportit, edukimit dhe teknologjisë.
+                </p>
+            </div>
+
+            <div class="col-sm-3">
+                <h4>Linqe të shpejta</h4>
+                <ul class="footer-links">
+                    <li><a href="rresh_nesh.html">Rreth nesh</a></li>
+                    <li><a href="dokumentet.html">Dokumentet</a></li>
+                    <li><a href="dokumentacioni.html">Dokumentacioni</a></li>
+                    <li><a href="anetaresim.html">Anëtarësim</a></li>
+                    <li><a href="kontakti.html">Kontakti</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h4>Të dhëna bankare</h4>
+                <p>
+                    <strong>Banka:</strong> T.C. Ziraat Bankası<br>
+                    <strong>Emri:</strong> Reactive Youth & Sports Association<br>
+                    <strong>IBAN:</strong> XK05 2202 1301 0023 3339<br>
+                    <strong>Qyteti:</strong> Prizren, Kosovë
+                </p>
+            </div>
+
+            <div class="col-sm-3">
+                <h4>Lokacioni ynë</h4>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.597652395679!2d20.725916376579667!3d42.30847423838032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1353950f58860f4b%3A0x7d6c568579435b6c!2sSports%20Center%20Sezai%20Surroi!5e0!3m2!1sen!2s!4v1709560000000!5m2!1sen!2s" 
+                    width="100%" 
+                    height="150" 
+                    style="border:0; border-radius:8px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+                <p class="small mt-2">Qendra Sportive "Sezai Surroi", Prizren</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row text-center">
+            <h4>Sponsorë & Partnerë</h4>
+            <div class="sponsor-logos d-flex justify-content-center flex-wrap align-items-center">
+                <img src="images/sponsors/komuna-prizrenit.png" alt="Komuna e Prizrenit" style="max-height:60px; margin:15px;">
+                <img src="images/sponsors/kfor.png" alt="Kosovo Force" style="max-height:60px; margin:15px;">
+                <img src="images/sponsors/yee.png" alt="Yunus Emre Institute" style="max-height:60px; margin:15px;">
+                <img src="images/sponsors/hyska.png" alt="Hyska" style="max-height:60px; margin:15px;">
+                <img src="images/sponsors/uje-sharri.png" alt="Uje Sharri" style="max-height:60px; margin:15px;">
+                <img src="images/sponsors/paysera.png" alt="Paysera" style="max-height:60px; margin:15px;">
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="text-center">
+            © Reactive Youth & Sports Association - Prizren (2025)
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

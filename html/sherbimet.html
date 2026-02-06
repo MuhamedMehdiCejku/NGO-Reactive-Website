@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <title>Shërbimet - RYSA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --accent-red: #d90429;
+            --dark-navy: #2b2d42;
+        }
+        .table-container {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .thead-dark {
+            background-color: var(--dark-navy);
+            color: white;
+        }
+        .service-icon {
+            color: var(--accent-red);
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="RYSA Logo" class="logo">
+                </a>
+            </div>
+            <div class="col-sm-8 text-right nav">
+                <a href="index.html">Ballina</a>
+                <a href="sherbimet.html">Shërbimet</a>
+                <a href="aktivitetet.html">Aktivitetet</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="ekipi.html">Ekipi</a>
+                <a href="media.html">Media</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero text-center">
+    <div class="container">
+        <h1>Shërbimet tona</h1>
+        <p>Lista zyrtare e fushëveprimeve të organizatës RYSA.</p>
+    </div>
+</section>
+
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="table-container border">
+            <div class="table-responsive">
+                <table class="table table-hover table-striped align-middle mb-0">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="py-3 ps-4">#</th>
+                            <th scope="col" class="py-3">Kategoria e Shërbimit</th>
+                            <th scope="col" class="py-3">Përshkrimi i Detajuar</th>
+                            <th scope="col" class="py-3 text-center">Statusi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="ps-4">1</th>
+                            <td class="fw-bold"><i class="bi bi-trophy service-icon"></i>Sport & Rekreacion</td>
+                            <td>Organizim turnesh sportive, trajnime rekreative dhe aktivitete të dedikuara për përmirësimin e shëndetit fizik në komunitet.</td>
+                            <td class="text-center"><span class="badge bg-success">Aktiv</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="ps-4">2</th>
+                            <td class="fw-bold"><i class="bi bi-people service-icon"></i>Angazhim Rinor</td>
+                            <td>Përfshirje aktive e të rinjve në projekte sociale, programe vullnetarizmi dhe trajnime për lidership dhe qytetari aktive.</td>
+                            <td class="text-center"><span class="badge bg-success">Aktiv</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="ps-4">3</th>
+                            <td class="fw-bold"><i class="bi bi-palette service-icon"></i>Kulturë & Art</td>
+                            <td>Promovim i vlerave kulturore dhe trashëgimisë përmes eventeve, ekspozitave dhe aktiviteteve të ndryshme artistike.</td>
+                            <td class="text-center"><span class="badge bg-success">Aktiv</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="ps-4">4</th>
+                            <td class="fw-bold"><i class="bi bi-book service-icon"></i>Edukim & Trajnime</td>
+                            <td>Workshope edukative, trajnime profesionale dhe programe specifike për zhvillimin personal dhe profesional të të rinjve.</td>
+                            <td class="text-center"><span class="badge bg-success">Aktiv</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="ps-4">5</th>
+                            <td class="fw-bold"><i class="bi bi-cpu service-icon"></i>Teknologji Informative</td>
+                            <td>Edukimi digjital, projekte në zhvillim web, media digjitale dhe nxitja e inovacionit teknologjik tek gjeneratat e reja.</td>
+                            <td class="text-center"><span class="badge bg-success">Aktiv</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="ps-4">6</th>
+                            <td class="fw-bold"><i class="bi bi-handshake service-icon"></i>Bashkëpunime</td>
+                            <td>Ndërtimi i partneriteteve strategjike me organizata vendore dhe ndërkombëtare për realizimin e projekteve me interes publik.</td>
+                            <td class="text-center"><span class="badge bg-success">Aktiv</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <p class="text-muted mt-3 small ps-2">* Të gjitha shërbimet ofrohen në përputhje me statutin e organizatës RYSA.</p>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        
+        <h3 class="fw-bold mb-4" style="color: var(--dark-navy); border-left: 5px solid var(--accent-red); padding-left: 15px;">Kategoritë e Shërbimeve</h3>
+        <div class="table-container border mb-5 bg-white shadow-sm rounded-3 overflow-hidden">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead style="background-color: var(--dark-navy); color: white;">
+                        <tr>
+                            <th class="py-3 ps-4">Kategoria</th>
+                            <th class="py-3">Përshkrimi</th>
+                            <th class="py-3 text-center">Frekuenca</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold ps-4"><i class="bi bi-trophy-fill text-danger me-2"></i>Sport</td>
+                            <td>Turne në futboll, basketboll dhe gara atletike.</td>
+                            <td class="text-center"><span class="badge rounded-pill bg-primary">Mujore</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold ps-4"><i class="bi bi-laptop text-danger me-2"></i>Teknologji</td>
+                            <td>Kurse bazike të programimit dhe sigurisë kibernetike.</td>
+                            <td class="text-center"><span class="badge rounded-pill bg-secondary">Periodike</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 mb-5">
+                <h3 class="fw-bold mb-4 h4" style="color: var(--dark-navy);">Kush përfiton nga RYSA?</h3>
+                <div class="table-container border bg-white shadow-sm rounded-3 overflow-hidden">
+                    <table class="table table-sm table-hover mb-0">
+                        <thead class="bg-light">
+                            <tr>
+                                <th class="py-2 ps-3">Grupi</th>
+                                <th class="py-2">Moshë-grupi</th>
+                                <th class="py-2">Përfshirja</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ps-3 fw-bold">Nxënësit</td>
+                                <td>10 - 18 vjeç</td>
+                                <td class="text-success text-center"><i class="bi bi-check-circle-fill"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-3 fw-bold">Studentët</td>
+                                <td>18 - 25 vjeç</td>
+                                <td class="text-success text-center"><i class="bi bi-check-circle-fill"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-3 fw-bold">Vullnetarët</td>
+                                <td>Të gjitha moshat</td>
+                                <td class="text-success text-center"><i class="bi bi-check-circle-fill"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-5">
+                <h3 class="fw-bold mb-4 h4" style="color: var(--dark-navy);">Impakti në Komunitet</h3>
+                <div class="table-container border bg-white shadow-sm rounded-3 overflow-hidden">
+                    <table class="table table-sm table-hover mb-0">
+                        <thead class="bg-light">
+                            <tr>
+                                <th class="py-2 ps-3">Indikatori</th>
+                                <th class="py-2 text-center">Vlera (Prizren)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ps-3">Aktivitete të realizuara</td>
+                                <td class="text-center fw-bold text-danger">+50</td>
+                            </tr>
+                            <tr>
+                                <td class="ps-3">Të rinj të angazhuar</td>
+                                <td class="text-center fw-bold text-danger">+500</td>
+                            </tr>
+                            <tr>
+                                <td class="ps-3">Partnerë strategjikë</td>
+                                <td class="text-center fw-bold text-danger">12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info border-0 shadow-sm rounded-4 p-4">
+            <h5 class="fw-bold"><i class="bi bi-info-circle-fill me-2"></i>Shënim për Bashkëpunim</h5>
+            <p class="mb-0 small">Nëse jeni institucion apo biznes dhe dëshironi të mbështesni ndonjë nga këto kategori, na kontaktoni për detaje të mëtejshme rreth partneritetit.</p>
+        </div>
+        
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h4>RYSA</h4>
+                <p>
+                    Reactive Youth & Sports Association është organizatë
+                    jo-qeveritare e fokusuar në zhvillimin e të rinjve
+                    përmes sportit, edukimit dhe teknologjisë.
+                </p>
+            </div>
+
+            <div class="col-sm-3">
+                <h4>Linqe të shpejta</h4>
+                <ul class="footer-links">
+                    <li><a href="rresh_nesh.html">Rreth nesh</a></li>
+                    <li><a href="dokumentet.html">Dokumentet</a></li>
+                    <li><a href="dokumentacioni.html">Dokumentacioni</a></li>
+                    <li><a href="anetaresim.html">Anëtarësim</a></li>
+                    <li><a href="kontakti.html">Kontakti</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3">
+                <h4>Të dhëna bankare</h4>
+                <p>
+                    <strong>Banka:</strong> T.C. Ziraat Bankası<br>
+                    <strong>Emri:</strong> Reactive Youth & Sports Association<br>
+                    <strong>IBAN:</strong> XK05 2202 1301 0023 3339<br>
+                    <strong>Qyteti:</strong> Prizren, Kosovë
+                </p>
+            </div>
+
+            <div class="col-sm-3">
+                <h4>Lokacioni ynë</h4>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.597652395679!2d20.725916376579667!3d42.30847423838032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1353950f58860f4b%3A0x7d6c568579435b6c!2sSports%20Center%20Sezai%20Surroi!5e0!3m2!1sen!2s!4v1709560000000!5m2!1sen!2s" 
+                    width="100%" 
+                    height="150" 
+                    style="border:0; border-radius:8px;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+                <p class="small mt-2">Qendra Sportive "Sezai Surroi", Prizren</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row text-center">
+            <h4>Sponsorë & Partnerë</h4>
+            <div class="sponsor-logos d-flex justify-content-center flex-wrap align-items-center">
+                <img src="images/sponsors/komuna-prizrenit.png" alt="Komuna e Prizrenit" style="max-height:60px; margin:15px;">
+                <img src="images/sponsors/kfor.png" alt="Kosovo Force" style="max-height:60px; margin:15px;">
+                <img src="images/sponsors/yee.png" alt="Yunus Emre Institute" style="max-height:60px; margin:15px;">
+                <img src="images/sponsors/hyska.png" alt="Hyska" style="max-height:60px; margin:15px;">
+                <img src="images/sponsors/uje-sharri.png" alt="Uje Sharri" style="max-height:60px; margin:15px;">
+                <img src="images/sponsors/paysera.png" alt="Paysera" style="max-height:60px; margin:15px;">
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="text-center">
+            © Reactive Youth & Sports Association - Prizren (2025)
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
